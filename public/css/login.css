@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+
 /* LOGIN PAGE */
 * {
   margin: 0;
@@ -6,6 +8,7 @@
   scroll-behavior: smooth;
   list-style: none;
   text-decoration: none;
+  font-family: "Gothic A1", sans-serif;
 }
 :root {
   --main-font: 'Lora', serif;
@@ -13,58 +16,66 @@
   --main-color: #F1EFEF;
   --secudary-color: #CCC8AA;
   --third-color: #7D7C7C;
+  --fourth-color: #7c7a66e4;
   --font-color: #191717;
+  --fifth-color: #34332ae4;  
 }
-
 body {
-    background-color: VAR(--main-color);
-    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-    margin: 0;
+    margin: 0;  
+    background-image: url(/img/prosaFundo.jpeg);
+    background-size: 300% 100%;
+    animation: ground 300s;
+  }
+  .container-principal{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-principal p{
+    margin-bottom: 15px;
+    
   }
   #logo-menu {
-    width: 120px;
+    width: auto;
     height: 110px;
-}
-  
+    margin-bottom: 10px;
+    animation: rotate 3s infinite;
+  }  
   .container {
     background-color: var(--secudary-color);
-    padding: 20px 40px;
-    border-radius: 5px;
-  }
-  
-  .container h1 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .container a {
-    text-decoration: none;
-    color: VAR(--third-color);
-    font-weight: bolder;
-  }
-  
+    padding: 10px 30px 20px 30px;
+    margin: 0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #111;
+  }  
   .btn {
     cursor: pointer;
     display: inline-block;
     width: 100%;
-    background: var(--third-color));
+    background-color: var(--fifth-color);
+    color: var(--main-color);
+    border: 0;
     padding: 15px;
     font-family: inherit;
     font-size: 16px;
-    border: 0;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin-bottom: 15px;
   }
   .btn:hover{
-    background-color: #50623A;
-    color:var(--main-color)
-  }
-  
+    background-color: var(--fourth-color);
+    color:#111;
+    border: 0;
+  }  
   .btn:focus {
     outline: 0;
   }
@@ -78,26 +89,26 @@ body {
   }
   
   .form-control {
-    position: relative;
-    margin: 20px 0 40px;
-    width: 300px;
+    margin: 20px 0;
+    position: relative;    
+    width: 250px;
   }
   
   .form-control input {
     background-color: transparent;
     border: 0;
-    border-bottom: 2px #fff solid;
+    border-bottom: 2px var(--fifth-color) solid;
     display: block;
     width: 100%;
     padding: 15px 0;
     font-size: 18px;
-    color: #fff;
+    color: #111;
   }
   
   .form-control input:focus,
   .form-control input:valid {
     outline: 0;
-    border-bottom-color:var(--third-color);
+    border-bottom-color:var(--fifth-color);
   }
   
   .form-control label {
@@ -105,6 +116,7 @@ body {
     top: 15px;
     left: 0;
     pointer-events: none;
+    color: var(--fifth-color);
   }
   
   .form-control label span {
@@ -120,3 +132,40 @@ body {
     transform: translateY(-30px);
   }
 /* FIM LOGIN PAGE */
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  40%{
+    transform: rotate(3deg);
+  }
+  80%{
+    transform: rotate(-3deg);
+  }
+  100%{
+    transform: rotate(0deg)
+  }
+}
+
+@keyframes ground{
+  0%{
+    background-position: 0% 0%;  
+  }
+  20%{
+    background-position: 50% 0%; 
+  }
+  40%{
+    background-position: 100% 0%;
+  }
+  60%{
+    background-position: 150% 0%;
+  }
+  80%{
+    background-position: 200% 0%;
+  }
+  100%{
+    background-position: 250% 0%;
+  }
+   
+  }

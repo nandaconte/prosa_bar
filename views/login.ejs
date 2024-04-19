@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
-    <script src="https://kit.fontawesome.com/988a2714d4.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="img/svg" id="mug" href="../public/img/mug-saucer-solid (1).svg">
-    <title>Prosa Bar & Café - Login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/login.css" />
+  <script src="https://kit.fontawesome.com/988a2714d4.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="img/svg" id="mug" href="../public/img/mug-saucer-solid (1).svg" />
+  <title>Prosa Bar & Café - Login</title>
 </head>
+
 <body>
-    <head>
-        <a href="/">
-            <img src="img/logo sem fundo.png" alt="Logo Prosa e Bar" id="logo-menu">
-        </a>
-    </head>
+  <div class="container-principal">
+    <a href="/">
+      <img src="img/logo balão branco.png" alt="Logo Prosa e Bar" id="logo-menu" />
+    </a>
     <div class="container">
-        <h1>Acesso Staff</h1>
-        <form method="POST" action="/log">
-          <div class="form-control">
-            <input type="email" name="email" required>
-            <label>Email</label>
-          
+      <form method="POST" action="/log">
+        <div class="form-control">
+          <input type="email" name="email" required />
+          <label>Email</label>
+        </div>
+        <div class="form-control">
+          <input type="password" name="senha" required />
+          <label>Senha</label>
+        </div>
+        <button type="submit" class="btn">Entrar</button></a>
+        
+          <div class="text-center">
+            <label style="font-weight:bold; color: red;">
+              
+            </label>
           </div>
-  
-          <div class="form-control">
-            <input type="password" name="pass" required>
-            <label>Password</label>
-          </div>
-          
-          <a href="#">
-          <button class="btn">Login</button>
-          </a>
-        </form>
-      </div>
-      <script src="js/login.js"></script>
-     
+        
+            <p>ou</p>
+      </form>
+      <a href="/cadastrostaff"><button class="btn">Cadastre-se</button></a>
+    </div>
+  </div>
+  <script src="js/login.js"></script>
 </body>
+
 </html>

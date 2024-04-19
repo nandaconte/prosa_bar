@@ -71,7 +71,7 @@ body {
     color: var(--font-color);
     letter-spacing: 2px;
 }
- ul :nth-child(3){
+ ul :nth-child(4){
     background-color: var(--third-color);
     padding: 1rem;
     border-radius: 25px;
@@ -86,7 +86,7 @@ li #btn-login{
 .mobile{
     background-color:#e7e7e7;
     position: relative;
-    top:8rem;
+    top:15rem;
     padding: 1rem 1rem 0 1rem;
     font-family: var(--secudary-font);
     
@@ -113,26 +113,9 @@ li #btn-login{
 }
 /* Fim Banner Section Desktop*/
 
-/* Section Descrição Letícia */
-.container-description{
-    display: flex;
-    position: relative;
-    margin: 9rem 1rem 2rem 1rem;
-    gap:1.5rem;
-    align-items: center;
-
-}
-#img-description{
-    height: 250px;
-    border-radius: 50%;
-    border: 3px solid var(--third-color);
-    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(59, 68, 78, 0.589);
-}
-/* Fim Section Descrição Letícia */
-
 /*Section Carrossel de fotos Mobile  */
 
-.slidermobile{
+/* .slidermobile{
     margin: 0 auto;
     width: 340px;
     height:420px;
@@ -222,7 +205,7 @@ li #btn-login{
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color:var(--main-color);
-}
+} */
 
 /*Fim Section Carrossel de fotos Mobile  */
 
@@ -300,6 +283,7 @@ footer{
     background-color: var(--secudary-color);
     text-align: center;
     padding-top: 1rem;
+    margin-top:20rem;
 }
 /* FIM HOME PAGE */
 @media (min-width:768px) {
@@ -372,7 +356,7 @@ footer{
         gap: 3rem;
         
     }
-    ul :nth-child(3){
+    ul :nth-child(4){
         background-color: var(--third-color);
         padding: 1rem 3rem;
         border-radius: 25px;

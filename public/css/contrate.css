@@ -26,7 +26,6 @@ body {
     
 }
 
-/* HOME PAGE */
 /* Menu de Navegação */
 #logo-menu {
     width: auto;
@@ -71,7 +70,7 @@ body {
     color: var(--font-color);
     letter-spacing: 2px;
 }
- ul :nth-child(3){
+ ul :nth-child(4){
     background-color: var(--third-color);
     padding: 1rem;
     border-radius: 25px;
@@ -81,219 +80,41 @@ li #btn-login{
 }
 /* Fim do Menu de Navegação */
 
-
-/* Inicio Banner Section Mobile*/
-.mobile{
-    background-color:#e7e7e7;
+.container-pai{
+    display: flex;
+    margin: 0 auto;
     position: relative;
-    top:8rem;
-    padding: 1rem 1rem 0 1rem;
-    font-family: var(--secudary-font);
+    width: 340px;
+    height: 420px;
+    top:15rem;
+    gap:2rem;
+    text-align: center;
     
 }
-.mobile h2{
-    font-size: 15px;
-    padding-bottom: 6px;
+.container-pai a{
+    text-decoration: none;
+    color: var(--font-color);
 }
-.mobile h2 span{
-    font-style: italic;
-}
-.mobile li{
-    padding-bottom: 1rem;
-}
-.mobile li span{
-    font-weight: bold;
-}
-/* Fim Banner Section Mobile*/
-
-
-/* Inicio Banner Section Desktop*/
-#banner{
-    display:none;
-}
-/* Fim Banner Section Desktop*/
-
-/* Section Descrição Letícia */
-.container-description{
+.container-festa{
+    width: 170px;
+    height: 110px;
     display: flex;
-    position: relative;
-    margin: 9rem 1rem 2rem 1rem;
-    gap:1.5rem;
     align-items: center;
-
-}
-#img-description{
-    height: 250px;
-    border-radius: 50%;
-    border: 3px solid var(--third-color);
-    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(59, 68, 78, 0.589);
-}
-/* Fim Section Descrição Letícia */
-
-/*Section Carrossel de fotos Mobile  */
-
-.slidermobile{
-    margin: 0 auto;
-    width: 340px;
-    height:420px;
-    overflow: hidden;  
-    margin-bottom: 2rem; 
-}
-
-.slider-mobile{
-    width: 400%;
-    height:420px;
-    display: flex;
-}
-.slider-mobile input{
-    display: none;
-}
-.slide{
-    width: 25%;
-    position: relative;
-}
-.slider-mobile img{
-    width: 340px;
-    height:420px;
-    border-radius: 5%; 
-}
-
-.manual-navigation{
-    position:absolute;
-    width: 340px;
-    margin-top: 360px;
-    display: flex;
     justify-content: center;
-    transition: .06s;
-}
-
-.manual-btn{
-    border: 2px solid var(--main-color);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-}
-
-.manual-btn:hover{
-    background-color: var(--main-color);
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-#radio3:checked ~ .first{
-    margin-left: -50%;
-}
-#radio4:checked ~ .first{
-    margin-left: -75%;
-}
-.navigation-auto div{
-    border: 2px solid var(--main-color);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-.navigation-auto{
-    position:absolute;
-    width: 340px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
-    
-}
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-}
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color:var(--main-color);
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color:var(--main-color);
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: var(--main-color);
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color:var(--main-color);
-}
-
-/*Fim Section Carrossel de fotos Mobile  */
-
-/* Formulário para Contratação de Eventos */
-#form-event{
-    margin: 0 auto;
-    width: 360px;  
-    height: fit-content;
-    padding-bottom: 2rem;
-    
-}
-fieldset{
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 9px;
-    border: 4px dashed var(--main-color);
-    
-}
-legend span{
-    font-weight: bolder;
-    font-size: 20px;
-}
-fieldset label{
-    margin: 6px;
-}
-
-fieldset input{
-    margin-bottom: 6px;
-    border: 2px solid var(--secudary-color);
-    border-radius: 5px;
-    padding: 5px;
-}
-.container-service{
-    display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-wrap: nowrap;
-   font-size: 15px;
-   margin:1rem 0;
-}
-input[type="radio"]{
-    -webkit-appearance: none;
-    color: aqua;
-    border: 1px solid var(--third-color);
-    
-    
-}
- input[type="radio"]:checked  {
     background-color: var(--secudary-color);
+    color: var(--third-color);
+    box-shadow: 2px 2px 5px rgba(59, 68, 78, 0.589) ;
 }
-.number-guest{
-    width: 120px;
-}
-fieldset button{
-    align-self: center;
-    margin: 1rem;
-    width:180px;
-    height: 35px;
+.container-condo{
+    width: 170px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--secudary-color);
-    border: none;
-    border-radius: 9px;
-    box-shadow: 11px 10px 21px -12px rgba(0,0,0,0.75);    
+    color: var(--third-color);
+    box-shadow: 2px 2px 5px rgba(59, 68, 78, 0.589) ;
 }
-fieldset button:hover{
-    background-color: var(--third-color);
-    color: var(--main-color);
-}
-
-/* Fim Formulário para Contratação de Eventos */
 
 footer{
     height: 40px;
@@ -301,57 +122,10 @@ footer{
     text-align: center;
     padding-top: 1rem;
 }
-/* FIM HOME PAGE */
+
 @media (min-width:768px) {
-    /* HOME PAGE */
-
-    /*  Section Carrossel de fotos Desktop */
-.slidermobile{
-    display: block;
-    width: 720px;
-    height:510px ;
-    overflow: hidden;
-    margin: 2rem auto;
+     
 }
-.slider-mobile{
-    width: 500%;
-    height:510px ;
-    display: flex;
-}
-.slider-mobile input{
-    display: none;
-}
-.slide-mobile{
-    width: 75%;
-    position: relative;
-}
-.slider-mobile img{
-    width: 720px;
-    height:510px ;
-    border-radius: 5%;
-    display: flex;
-}
-.manual-navigation{
-    width: 720px;
-    margin-top: 420px;  
-}
-.navigation-auto{    
-    width: 720px;
-    margin-top: 420px; 
-}
- /*  Fim Section Carrossel de fotos Desktop */
-
- /* Formulário para Contratação de Eventos */
- #form-event{
-    margin: 0 auto;
-    width: 630px;  
-    height: fit-content;
-    padding-bottom: 2rem;
-}
-/* Fim Formulário para Contratação de Eventos */
-}
-/* FIM HOME PAGE */
-
 @media (min-width:1000px) {
     /* HOME PAGE */
     /* Inicio do Menu de Navegação */
@@ -372,7 +146,7 @@ footer{
         gap: 3rem;
         
     }
-    ul :nth-child(3){
+    ul :nth-child(4){
         background-color: var(--third-color);
         padding: 1rem 3rem;
         border-radius: 25px;
@@ -384,78 +158,4 @@ footer{
         box-shadow: none;    
         
 }
-/* Fim do Menu de Navegação */
-
-/* Inicio Banner Section Mobile*/
-.mobile{
-   display: none;
 }
-/* Fim Banner Section Mobile*/
-
-/* Inicio Banner Section  Desktop*/
-.desktop{
-   padding-top: 7rem;
-}
-#banner{
-    display: flex;
-    width: 100%;
-    margin-bottom: 1rem;
-}
-/* Fim Banner Section Desktop */
-
-/* Section Descrição Letícia */
-.container-description{
-    margin-top:2rem;
-}
-/* Fim Section Descrição Letícia */
-
-/*  Section Carrossel de fotos Desktop */
-.slidermobile{
-    width: 980px;
-    height: 510px;
-    overflow: hidden;
-    margin: 2rem auto;
-}
-.slider-mobile{
-    width: 500%;
-    height: 510px;
-    display: flex;
-}
-.slider-mobile input{
-    display: none;
-}
-.slide-mobile{
-    width: 75%;
-    position: relative;
-}
-.slider-mobile img{
-    width: 960px;
-    height: 510px;
-    border-radius: 5%;
-    display: flex;
-}
-.manual-navigation{
-    width: 960px;
-    margin-top: 470px; 
-}
-.navigation-auto{    
-    width: 960px;
-    margin-top: 470px; 
-}
-
-/*  Fim Section Carrossel de fotos Mobile */
-
-/* Formulário para Contratação de Eventos */
-#form-event{
-    margin: 0 auto;
-    width: 940px;  
-    height: fit-content;
-    padding-bottom: 2rem;    
-}
-/* Fim Formulário para Contratação de Eventos */
-}
-/* FIM HOME PAGE */
-
-
-
-

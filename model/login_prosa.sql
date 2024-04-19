@@ -1,14 +1,12 @@
-create database prosa_bar;
+CREATE DATABASE prosabar;
 
-use prosa_bar;
+USE prosabar;
 
-CREATE TABLE usuarios(
-    usuario VARCHAR (100) NOT NULL,
+CREATE TABLE users(
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR (100) NOT NULL,
     email VARCHAR (100) NOT NULL,
-    pass INTEGER NOT NULL
-);
+    senha INTEGER NOT NULL
+    );
 
-INSERT INTO usuarios VALUES('Teste', 'falecomprosa@gmail.com', 'falecomprosa');
-select * from usuarios;
-
-drop table usuarios;
+select * from users;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://kit.fontawesome.com/988a2714d4.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="img/svg" id="mug" href="../public/img/mug-saucer-solid (1).svg">
+    <title>Prosa Bar & Café - Cadastro</title>
+</head>
+<body>
+    <head>
+        <a href="/">
+            <img src="/img/logo balão branco.png" alt="Logo Prosa e Bar" id="logo-menu">
+        </a>
+    </head>
+    <div class="container" id="cadastro">
+        <form method="POST" action="/savecadastrostaff">
+          <div class="form-control">
+            <input type="text" name="nome" required/>
+            <label>Nome</label>
+          </div>
+          <div class="form-control">
+            <input type="email" name="email" required/>
+            <label>Email</label>
+          </div>
+          <div class="form-control">
+            <input class="form-control" type="password" name="senha" required/>
+            <label>Senha</label>
+          </div>            
+          <button type="submit" class="btn">Cadastrar</button>
+        </form>
+        <a href="/login"><button class="btn">Voltar</button></a>
+      </div> 
+      <script src="js/login.js"></script>     
+    </body>     
+</body>
+</html>
