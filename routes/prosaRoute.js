@@ -9,6 +9,7 @@ router.get('/formulario-festa', prosaController.festa);
 router.get('/formulario-condominio', prosaController.condo)
 router.get('/homestaff', prosaController.homestaff)
 router.get('/cadastrostaff', prosaController.cadastrostaff )
-
+router.get('/log',prosaController.loginstaff )
+router.post('/savecadastrostaff', prosaController.savecadastrostaff)
 
 module.exports = router
